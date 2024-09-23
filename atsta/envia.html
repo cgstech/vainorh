@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vai no RH - CGS Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="containerr">
+            <div class="flex">
+                <h1><a href="index.html"><i class="fa-brands fa-slack"></i>  CGS Tech</a></h1>
+                <nav >
+                    <a href="index.html" class="links-menu"><span><i class="fa-solid fa-house"></i></span>Home</a>
+                    <a href="func.html" class="links-menu"><span><i class="fa-solid fa-house"></i></span>Funcionários</a>
+                    <a href="add_func.html"><span><i class="fa-solid fa-user"></i> </span>Cadastrar Funcionário</a>
+                    <a href="envia.html" class="links-menu"><span><i class="fa-solid fa-upload"></i></span>Enviar Atestado</a>
+                    <a href="minha_soli.html" class="links-menu"><span><i class="fa-solid fa-file"></i></span>Minhas solicitações</a>
+                    <a href="pesquisa.html" class="links-menu"><span><i class="fa-solid fa-magnifying-glass"></i></span>Pesquisar Atestado</a>
+                    <a href="meuperfil.html" class="links-menu"><span><i class="fa-solid fa-person"></i></span>Perfil</a>
+                    <a href="">Sair</a>
+                </nav>
+                <div class="ct-btn">
+                    <a href="#" id="btnMenu"><i class="fa-solid fa-bars"></i></a>
+                    
+                    
+                </div>
+            </div><!-- fim flex   -->
+        </div> <!-- fim container  -->
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <div class="container limitador">
+                <div class="flex">
+                    
+        
+                    <div class="card-img">
+                        <figure>
+                            <img src="imagens/destaque.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ct-form-atestado">
+            <h2>Anexar Atestado/Declaração</h2>
+            <form action="">
+                <label for="tipoAtestado">Tipo de Atestado</label>
+                <select name="tipoAtestado" id="tipoAtestado" onchange="atualizarFormulario()">
+                    <option value="">Selecione o tipo</option>
+                    <option value="dias">Atestado Médico de Dias</option>
+                    <option value="horas">Atestado Médico de Horas</option>
+                    <option value="declaracao">Declaração</option>
+                </select>
+        
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu Nome">
+        
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu E-mail">
+        
+                <div class="duo">
+                    <div>
+                        <label for="data">Data</label>
+                        <input type="date" id="data">
+                    </div>
+                    <div class="campo-hora" id="campoHora">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora">
+                    </div>
+                </div>
+        
+                <div id="campoCid" class="campocid">
+                    <label for="cid">Código CID</label>
+                    <input type="text" id="cid" placeholder="Digite o Código CID">
+                </div>
+        
+                <div id="campoMedico" class="campocid"">
+                    <label for="medico">Nome do Médico</label>
+                    <input type="text" id="medico" placeholder="Nome do médico">
+                    <label for="crm">CRM</label>
+                    <input type="text" id="crm" placeholder="CRM do médico">
+                </div>
+        
+                <div id="campoParentesco" class="campocid">
+                    <label for="parentesco">Parentesco (se aplicável)</label>
+                    <input type="text" id="parentesco" placeholder="Informe o parentesco">
+                </div>
+        
+                <label for="anexo">Anexar Atestado/Declaração</label>
+                <input type="file" id="anexo">
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+
+
+       
+
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+
+    <script src="js/js.js"></script>
+    <script src="https://kit.fontawesome.com/3770ee41c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
