@@ -541,3 +541,10 @@ button[type="submit"]:hover {
     border: none;
     background: #fff;
 }
+
+
+.custom-select{
+    padding: 10px;
+    border: none;
+    background: #fff;
+}
